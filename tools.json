@@ -1,0 +1,34 @@
+{
+    "tools" : [{
+        
+            "type" : "function",
+            "function" : {
+                "name" : "call_api",
+                "description" : "Call an API with the given parameters.",
+                "parameters" : {
+                    "type" : "object",
+                    "properties" : {
+                        "endpoint" : {
+                            "type" : "string",
+                            "description" : "The API endpoint to call."
+                        },
+                        "method" : {
+                            "type" : "string",
+                            "description" : "The HTTP method to use (e.g., GET, POST)."
+                        },
+                        "headers" : {
+                            "type" : "object",
+                            "description" : "The headers to include in the API call."
+                        },
+                        "body" : {
+                            "type" : "object",
+                            "description" : "The body of the API call (for POST, PUT, etc.)."
+                        }
+                    },
+                    "required" : ["endpoint", "method"]
+                }
+            }
+        
+    }
+    ]
+}
